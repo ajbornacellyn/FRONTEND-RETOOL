@@ -9,7 +9,7 @@ export const TasksProgress = (props) => {
   const [Mantenimientos, setMaintenances] = useState([]);
   useEffect(() => {
       axios
-    .get("http://localhost:8000/maintenance/", {
+    .get("https://django-retool-production.up.railway.app/maintenance/", {
       headers: {
         Authorization: `Token ${token}`,
       },

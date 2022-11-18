@@ -13,7 +13,7 @@ axios.interceptors.request.use(
 );
 
 export const getVehicles = async (state) => {
-    const res = await axios.get("http://localhost:8000/car/", {
+    const res = await axios.get("https://django-retool-production.up.railway.app/car/", {
     });
     state(res.data);
 }
@@ -35,13 +35,13 @@ export const deleteVehicle = async (vehicle) => {
 
 export const createVehicle = async (vehicle) => {
     axios
-      .post("http://localhost:8000/car/", {
+      .post("https://django-retool-production.up.railway.app/car/", {
           placa: vehicle.placa,
           marca: vehicle.marca,
           modelo: vehicle.modelo,
           motor: vehicle.motor,
           combustible: vehicle.combustible,
-          kilometraje: vehicle.kilometraje,}       
+          kilometraje: vehicle.kilometraje,}
         ).then((res) => {
             if (res.data.message === "Car already exists"){
                 alert("Car already exists");

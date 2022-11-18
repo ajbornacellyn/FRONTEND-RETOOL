@@ -11,7 +11,7 @@ export const TotalCustomers = (props) => {
     const [Mantenimientos, setMaintenances] = useState([]);
     useEffect(() => {
         axios
-      .get("http://localhost:8000/maintenance/", {
+      .get("https://django-retool-production.up.railway.app/maintenance/", {
         headers: {
           Authorization: `Token ${token}`,
         },
@@ -52,7 +52,7 @@ export const TotalCustomers = (props) => {
             variant="h4"
           >
             {total}
-            
+
           </Typography>
         </Grid>
         <Grid item>

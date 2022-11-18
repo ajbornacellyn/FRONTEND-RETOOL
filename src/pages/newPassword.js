@@ -31,7 +31,7 @@ const NewPassword = () => {
     console.log(isLogged);
     if (!isSignup){
       axios
-            .post("http://localhost:8000/login/", {
+            .post("https://django-retool-production.up.railway.app/login/", {
                 username: inputs.email,
                 password: inputs.password,
                 password2: inputs.password2,
@@ -48,7 +48,7 @@ const NewPassword = () => {
             .catch((err) => {});
     }else{
       axios
-            .post("http://localhost:8000/register/", {
+            .post("https://django-retool-production.up.railway.app/register/", {
                 first_name: inputs.name,
                 email: inputs.email,
                 password: inputs.password,

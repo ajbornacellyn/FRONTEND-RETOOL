@@ -14,13 +14,13 @@ axios.interceptors.request.use(
 
 
 export const getMaintenance = async (state) => {
-    const res = await axios.get("http://localhost:8000/maintenance/", {
+    const res = await axios.get("https://django-retool-production.up.railway.app/maintenance/", {
     });
     state(res.data);
 }
 
 export const createMaintenance = async (maintenance) => {
-    axios.post("http://localhost:8000/maintenance/", {
+    axios.post("https://django-retool-production.up.railway.app/maintenance/", {
           placa: maintenance.placa,
           descripcion: maintenance.descripcion,
           estado: maintenance.estado,
@@ -57,7 +57,7 @@ export const deleteMaintenance = async (maintenance) => {
 
 export const editMaintenance = async (maintenance) => {
     axios
-        .post("http://localhost:8000/edit_car/", {
+        .post("https://django-retool-production.up.railway.app/edit_car/", {
             placa: values.placa,
             marca: values.marca,
             modelo: values.linea,

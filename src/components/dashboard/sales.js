@@ -7,7 +7,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 
 export const Sales = ({props, ...React }) => {
-  
+
   const theme = useTheme();
   var mantLabels = [];
   var datos = [];
@@ -16,7 +16,7 @@ export const Sales = ({props, ...React }) => {
   const [Mantenimientos, setMaintenances] = useState([]);
   useEffect(() => {
       axios
-    .get("http://localhost:8000/maintenance/", {
+    .get("https://django-retool-production.up.railway.app/maintenance/", {
       headers: {
         Authorization: `Token ${token}`,
       },
@@ -32,7 +32,7 @@ export const Sales = ({props, ...React }) => {
     mantLabels = Mantenimientos.map((item) => item.fecha)
     datos = Mantenimientos.map((item) => item.kilometraje)
   }
-  
+
   const data = {
     datasets: [
       {

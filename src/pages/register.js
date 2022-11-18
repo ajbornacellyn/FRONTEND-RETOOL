@@ -44,7 +44,7 @@ const Register = () => {
         .string()
         .max(255)
         .required('Password is required'),
-      
+
       /*  policy: Yup
         .boolean()
         .oneOf(
@@ -53,7 +53,7 @@ const Register = () => {
         )*/
     }),
     onSubmit: () => {
-      axios.post('http://localhost:8000/register/', {
+      axios.post('https://django-retool-production.up.railway.app/register/', {
         username: formik.values.firstName,
         email: formik.values.email,
         password: formik.values.password,
@@ -63,7 +63,7 @@ const Register = () => {
         if (res.data.message== "Username already exists"){
           alert("Username already exists");
         }else{
-          axios.post('http://localhost:8000/login/', {
+          axios.post('https://django-retool-production.up.railway.app/login/', {
             username: formik.values.firstName,
             email: formik.values.email,
             password: formik.values.password,//falta poner email???
@@ -102,7 +102,7 @@ const Register = () => {
         }}
       >
         <Container maxWidth="sm">
-          
+
           <form onSubmit={formik.handleSubmit}>
             <Box sx={{ my: 3 }}>
               <Typography
@@ -205,14 +205,14 @@ const Register = () => {
               </Typography>
               */}
             </Box>
-            
+
 
             {Boolean(formik.touched.policy && formik.errors.policy) && (
               <FormHelperText error>
                 {formik.errors.policy}
               </FormHelperText>
             )}
-            
+
             <Box sx={{ py: 2 }}>
               <Button
                 color="primary"
@@ -243,8 +243,8 @@ const Register = () => {
                 </Link>
               </NextLink>
             </Typography>
-            
-            
+
+
           </form>
         </Container>
       </Box>

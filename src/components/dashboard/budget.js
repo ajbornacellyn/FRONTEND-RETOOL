@@ -12,7 +12,7 @@ export const Budget = ({props, ...React }) => {
     const [Mantenimientos, setMaintenances] = useState([]);
     useEffect(() => {
         axios
-      .get("http://localhost:8000/maintenance/", {
+      .get("https://django-retool-production.up.railway.app/maintenance/", {
         headers: {
           Authorization: `Token ${token}`,
         },
@@ -25,7 +25,7 @@ export const Budget = ({props, ...React }) => {
     }, []);
     if(Mantenimientos !== "Not maintenances" && Mantenimientos !== "No cars" && Mantenimientos.length>0){
         var total = 0;
-        var LastCost = Mantenimientos[Mantenimientos.length-1].costo; 
+        var LastCost = Mantenimientos[Mantenimientos.length-1].costo;
         Mantenimientos.forEach((item) => {
             total += item.costo
         })
@@ -48,7 +48,7 @@ export const Budget = ({props, ...React }) => {
             gutterBottom
             variant="overline"
           >
-            Costo total 
+            Costo total
           </Typography>
           <Typography
             color="textPrimary"

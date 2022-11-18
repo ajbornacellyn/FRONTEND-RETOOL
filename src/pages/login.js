@@ -27,7 +27,7 @@ const Login = () => {
     }),
     onSubmit: () => {
       console.log('submit');
-      axios.post('http://localhost:8000/login/', {
+      axios.post('https://django-retool-production.up.railway.app/login/', {
         username: formik.values.username,
         password: formik.values.password,
       })
@@ -51,7 +51,7 @@ const Login = () => {
       <Head>
         <title>Login</title>
       </Head>
-      
+
       <Box
         component="main"
         sx={{
@@ -61,15 +61,15 @@ const Login = () => {
           minHeight: '100%'
         }}
       >
-        
+
         <Container maxWidth="sm">
 
 
 
       {//parte de pruebas
 }
-        
-      
+
+
           <form onSubmit={formik.handleSubmit}>
             <Box sx={{ my: 3 }}>
               <Typography
@@ -118,7 +118,7 @@ const Login = () => {
                 </Button>
               </Grid>
             </Grid>
-    
+
             <Box
               sx={{
                 pb: 1,
