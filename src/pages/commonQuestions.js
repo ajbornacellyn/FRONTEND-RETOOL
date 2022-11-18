@@ -61,7 +61,7 @@ const Page = () => (
               variant="string"
               sx={{ py: 2 }}
             >
-              Para utilizar almacenar los datos correspondientes a sus autos, el usuario debe dirigirse a la pestaña de "Mis autos". Una vez aqui, presione el boton de crear vehiculo, introduzca la informacion sobre su vehiculo y confirme el proceso 
+              Para utilizar almacenar los datos correspondientes a sus autos, el usuario debe dirigirse a la pestaña de Mis autos. Una vez aqui, presione el boton de crear vehiculo, introduzca la informacion sobre su vehiculo y confirme el proceso
             </Typography>
             </Box>
             <Box>
@@ -82,10 +82,10 @@ const Page = () => (
               variant="string"
               sx={{ py: 2 }}
             >
-              Para modificar los datos correspondientes a los autos del usuario, este debe dirigirse a la pestaña de "Mis autos". Una vez aqui, presione el boton con el simbolo de un lapiz, modifique la informacion sobre su vehiculo y confirme el proceso 
+              Para modificar los datos correspondientes a los autos del usuario, este debe dirigirse a la pestaña de Mis autos. Una vez aqui, presione el boton con el simbolo de un lapiz, modifique la informacion sobre su vehiculo y confirme el proceso
             </Typography>
             </Box>
-            
+
             <Box>
             <Typography
               color="textPrimary"
@@ -154,64 +154,18 @@ const Page = () => (
               gutterBottom
               variant="string"
               sx={{ py: 2 }}
-              display="block"
             >
-              o Honestidad:  Se espera que todos los miembros del grupo tengan la honestidad para comunicarse con los integrantes e informarles en caso de que no pueda realizar una de sus partes asignadas  
-            </Typography>
-            <Typography
-              color="textPrimary"
-              gutterBottom
-              variant="string"
-              sx={{ py: 2 }}
-              display="block"
-            >
-              o Respeto: Se espera que todos los integrantes del grupo respeten las opiniones de los demás miembros 
-            </Typography>
-            <Typography
-              color="textPrimary"
-              gutterBottom
-              variant="string"
-              sx={{ py: 2 }}
-              display="block"
-            >
-              
-              o Responsabilidad: Se espera que todos los integrantes del grupo cumplan con lo que se comprometieron a realizar. 
-              
-            </Typography>
-            <Typography
-              color="textPrimary"
-              gutterBottom
-              variant="string"
-              sx={{ py: 2 }}
-              display="block"
-            >
-              o Solidaridad: Se espera que todos los integrantes del grupo tengan un sentimiento de unidad basada en la meta del equipo 
-            </Typography>
-            <Typography
-              color="textPrimary"
-              gutterBottom
-              variant="string"
-              sx={{ py: 2 }}
-              display="block"
-            >
-              
-              o Empatía: Se espera que todos los integrantes del grupo tengan la capacidad de ponerse en los zapatos del otro en caso de que alguien posea algún tipo de problema importante que le impida realizar su parte 
-              
-            </Typography>
-            <Typography
-              color="textPrimary"
-              gutterBottom
-              variant="string"
-              sx={{ py: 2 }}
-              display="block"
-            >
-              
+              o Honestidad:  Se espera que todos los miembros del grupo tengan la honestidad para comunicarse con los integrantes e informarles en caso de que no pueda realizar una de sus partes asignadas
+              o Respeto: Se espera que todos los integrantes del grupo respeten las opiniones de los demás miembros
+              o Responsabilidad: Se espera que todos los integrantes del grupo cumplan con lo que se comprometieron a realizar.
+              o Solidaridad: Se espera que todos los integrantes del grupo tengan un sentimiento de unidad basada en la meta del equipo
+              o Empatía: Se espera que todos los integrantes del grupo tengan la capacidad de ponerse en los zapatos del otro en caso de que alguien posea algún tipo de problema importante que le impida realizar su parte
               o Comunicación: Se espera que todos los integrantes del grupo tengan la capacidad de comunicarse con los otros integrantes
             </Typography>
             </Box>
       </CardContent>
       <Divider />
-      
+
     </Card>
         </Box>
       </Container>

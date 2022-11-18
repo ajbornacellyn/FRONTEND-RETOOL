@@ -9,7 +9,7 @@ import { SettingsPassword } from "../components/settings/settings-password";
 import React, { useState } from "react";
 
 
-const resetPassword = () => {
+const ResetPassword = () => {
   const [isSignup, setIsSignup] = useState(false);
   const [isLogged, setIsLogged] = useState(true);
   const [inputs, setInputs] = useState({
@@ -78,8 +78,8 @@ const resetPassword = () => {
         <Container maxWidth="sm">
           <form onSubmit={handleSubmit}>
             <Box sx={{ my: 3 }}>
-              <Typography 
-                color="textPrimary" 
+              <Typography
+                color="textPrimary"
                 variant="h4"
                 >
                 Recuperacion de contraseña
@@ -117,4 +117,4 @@ const resetPassword = () => {
   );
 };
 
-export default resetPassword;
+export default ResetPassword;
