@@ -20,7 +20,7 @@ export const getVehicles = async (state) => {
 
 export const deleteVehicle = async (vehicle) => {
     axios
-      .delete("http://127.0.0.1:8000/car/", {
+      .delete("https://django-retool-production.up.railway.app/car/", {
         data: {"placa": vehicle.placa}
     }).then((res) => {
         if (res.data.message === "Car deleted"){
@@ -55,7 +55,7 @@ export const createVehicle = async (vehicle) => {
 
 export const editVehicle = async (placa, vehicle) => {
     axios
-    .put("http://127.0.0.1:8000/car/"+placa+"/", {
+    .put("https://django-retool-production.up.railway.app/car/"+placa+"/", {
         placa: vehicle.placa,
         marca: vehicle.marca,
         modelo: vehicle.modelo,
