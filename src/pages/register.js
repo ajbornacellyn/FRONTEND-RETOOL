@@ -28,22 +28,22 @@ const Register = () => {
     validationSchema: Yup.object({
       email: Yup
         .string()
-        .email('Must be a valid email')
+        .email('Por favor introduzca un correo valido')
         .max(255)
         .required(
-          'Email is required'),
+          'Por favor introduzca un correo electronico'),
       firstName: Yup
         .string()
         .max(255)
-        .required('First name is required'),
+        .required('Por favor introduzca un nombre de usuario'),
       lastName: Yup
         .string()
         .max(255)
-        .required('Last name is required'),
+        .required('Por favor introduzca su nombre completo'),
       password: Yup
         .string()
         .max(255)
-        .required('Password is required'),
+        .required('Por favor introduzca una contraseña'),
 
       /*  policy: Yup
         .boolean()

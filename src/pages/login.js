@@ -19,11 +19,11 @@ const Login = () => {
       username: Yup
         .string()
         .max(255)
-        .required('username is required'),
+        .required('Por favor introduzca su nombre de usuario'),
       password: Yup
         .string()
         .max(255)
-        .required('Password is required')
+        .required('Por favor introduzca su contraseña')
     }),
     onSubmit: () => {
       console.log('submit');
