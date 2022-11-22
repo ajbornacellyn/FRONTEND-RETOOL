@@ -67,7 +67,7 @@ export const editVehicle = async (placa, vehicle) => {
 
 export const updateVehicleKm = async (vehicle) => {
     axios
-    .put("http://127.0.0.1:8000/carUpdateKm/"+vehicle.placa+"/", {
+    .put("https://django-retool-production.up.railway.app/carUpdateKm/"+vehicle.placa+"/", {
         placa: vehicle.placa,
         kilometraje: vehicle.kilometraje,
     }).then((res) => {
