@@ -1,3 +1,4 @@
 /backupFrontend
 /Backend/env
 node_modules
+.next
