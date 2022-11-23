@@ -9,6 +9,7 @@ import { UserCircle as UserCircleIcon } from '../icons/user-circle';
 import { Users as UsersIcon } from '../icons/users';
 import { AccountPopover } from './account-popover';
 import { Facebook as FacebookIcon } from '../icons/facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 
 const DashboardNavbarRoot = styled(AppBar)(({ theme }) => ({
@@ -63,6 +64,9 @@ export const DashboardNavbar = (props) => {
           <Tooltip title="Redes sociales">
             <IconButton sx={{ ml: 1 }}target="_blank" href="https://www.facebook.com/people/ReTool-Mantenimientos/100087782960677/">
                 <FacebookIcon fontSize="small"/>
+            </IconButton>
+            <IconButton sx={{ ml: 1 }}target="_blank" href="https://www.instagram.com/retool_mantenimientos/">
+                <InstagramIcon fontSize="small"/>
             </IconButton>
           </Tooltip>
 
