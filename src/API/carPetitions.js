@@ -46,8 +46,8 @@ export const createVehicle = async (vehicle) => {
             if (res.data.message === "Car already exists"){
                 alert("Car already exists");
             }else{
-                alert("Car created");
-                Router.reload();
+                alert("Vehiculo creado");
+                Router.push('/');
             }
         }
     )
@@ -63,4 +63,20 @@ export const editVehicle = async (placa, vehicle) => {
         kilometraje: vehicle.kilometraje,
     })
 
+}
+
+export const updateVehicleKm = async (vehicle) => {
+    axios
+    .put("https://django-retool-production.up.railway.app/carUpdateKm/"+vehicle.placa+"/", {
+        placa: vehicle.placa,
+        kilometraje: vehicle.kilometraje,
+    }).then((res) => {
+        if (res.data === "Vehiculo no encontrado"){
+            alert("Vehiculo no encontrado");
+        }else{
+            alert(res.data.response);
+            //Router.reload();
+        }
+    }
+    )
 }

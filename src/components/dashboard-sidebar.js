@@ -21,7 +21,7 @@ import HistoryIcon from '@mui/icons-material/History';
 import ContactSupportIcon from '@mui/icons-material/ContactSupport';
 import ForumIcon from '@mui/icons-material/Forum';
 import HelpIcon from '@mui/icons-material/Help';
-
+import BuildCircleIcon from '@mui/icons-material/BuildCircle';
 
 const items = [
   /*
@@ -69,13 +69,8 @@ const items = [
 },  
 {
   href: '/maintenance',
-  icon: (<AddCircleIcon fontSize="small" />),
-  title: 'Añadir mantenimiento'
-}, 
-{
-  href: '/maintenanceHistory',
-  icon: (<HistoryIcon fontSize="small" />),
-  title: 'Historial de mantenimientos'
+  icon: (<BuildCircleIcon fontSize="small" />),
+  title: 'Mis mantenimientos'
 }, 
 /*
 {
